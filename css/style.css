@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Roboto:ital@0;1&display=swap');
+
+/* reinicio padding y margin */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*--------------------------diseño nav--------------------------*/
+
+header div {
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+ul li{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+a{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/*--------------------------diseño body--------------------------*/
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 5;
+    word-spacing: 7;
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+}
+
+main div p{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+}
+
+main div img{
+    background-color: black;
+    width: 100%;
+}
+
+section{
+    font-family: 'Roboto';
+    font-size: 40px;
+    text-transform: uppercase;
+    color: aliceblue;
+    background-color: black;
+}
+
+/*--------------------------diseño videos--------------------------*/
+section h2 {
+    padding: 20px;
+}
+
+.trailer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+iframe {
+    border-radius: 5%;
+    border-color: white;
+    border-style:inset;
+    border-width: 10px;
+}
+
+
+/*--------------------------diseño del footer--------------------------*/
+footer{
+    padding: 20px;
+    background-color: white;
+}
+footer div ul {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.square {
+    width: 400px;
+}
+
+
+/*--------------------------historia--------------------------*/
+
+.mainhistoria {
+    background-color: black;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.historia img{
+    width: 400px;
+    height: auto;
+}
+
+.historia {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    padding: 10px;
+}
+
+.historialetras {
+    font-family: 'Poppin', sans-serif;
+    font-size: 25px;
+    text-align:left;
+}
+
+main div img {
+    border-radius: 10%;
+}
+
+
+/*--------------------------personajes--------------------------*/
+
+.personajes-body{
+    background-color: black;
+    padding-bottom: 20px;
+}
+
+.personajes {    
+    border-style:groove;
+    border-color: white;
+    border-radius: 2%;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+.personajes p{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.personajes h2 {
+    color: aliceblue;
+    font-size: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/*--------------------------musica--------------------------*/
+.musica-body {
+    background-color: black;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.videos {
+    font-family: 'Roboto';
+    font-size: 25px;
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.videos h2 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+
+/*--------------------------Director--------------------------*/
+.director{
+    background-color: black;
+    padding: 20px;
+    padding-right: 30px;
+}
+
+.director p{
+    text-align:left;
+}
+
+.director div img{
+    width: 20%;
+    padding: 10px;
+}
+
+
+.director div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+/*--------------------------mas--------------------------*/
+
+.mas {
+    background-color: black;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.mas img{
+    width: 300px;
+    height: auto;
+}
+
+.juegos p{
+    text-align: left;
+}
+
+.juegos h2 {
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.juegos {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 20px;
+    border: 10px;
+    border-style:double;
+    border-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.juegos h2 {
+    margin-bottom: 10px;
+}
+
+.juegos div {
+    padding: 10px;
+    margin-left: 20px;
+}
