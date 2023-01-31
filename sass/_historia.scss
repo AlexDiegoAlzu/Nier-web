@@ -1,0 +1,102 @@
+.mainhistoria {
+
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        color: aliceblue;
+        background-color: black;
+        text-transform: uppercase;
+        padding: 2%;
+        padding-top: 4%;
+    }
+
+    section {
+
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            line-height: 30px;
+            letter-spacing: 5;
+            word-spacing: 7;
+            text-align: justify;
+            color: aliceblue;
+            background-color: black;
+        }
+
+    }
+}
+
+/* -------historia------ */
+/* estilos mobile first 0-600*/
+.historia img {
+    float: left;
+    margin: 2%;
+    max-width: 60%;
+}
+
+.mainhistoria {
+    grid-area: historia;
+    @include marg (3em, 3em);
+}
+
+.grilla-historia {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "logo       logo"
+        "historia   historia"
+        "footer     footer";
+}
+
+.historia p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 5;
+    word-spacing: 7;
+    text-align: justify;
+    color: aliceblue;
+    text-transform: none;
+    background-color: black;
+}
+
+/* estilos mobile first 600-1024*/
+@media (min-width: 600px) {
+    .mainhistoria {
+
+        h1 {
+            font-size: 40px;
+        }
+
+        section {
+
+
+            p {
+                font-size: 18px;
+            }
+
+        }
+    }
+}
+
+/* estilos mobile first 1024*/
+@media (min-width: 1024px) {
+    .mainhistoria {
+
+        h1 {
+            font-size: 50px;
+        }
+
+        section {
+
+
+            p {
+                font-size: 20px;
+            }
+
+        }
+    }
+}

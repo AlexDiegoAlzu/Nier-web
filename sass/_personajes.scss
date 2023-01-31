@@ -1,0 +1,137 @@
+/*--------------------------personajes--------------------------*/
+
+.personajes-body {
+    background-color: black;
+    padding-bottom: 20px;
+
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        color: aliceblue;
+        background-color: black;
+        text-transform: uppercase;
+        padding: 2%;
+        padding-top: 4%;
+    }
+
+}
+
+.personajes {
+    border-style: groove;
+    overflow: hidden;
+    border-color: white;
+    border-radius: 2%;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* estilos mobile first 0-600*/
+
+.personajes img {
+    float: left;
+}
+
+.personajes-body {
+    grid-area: personajes;
+    @include marg (3em, 3em);
+}
+
+.personajes-body h1 {
+    margin-bottom: 0px;
+}
+
+.grilla-personajes {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "logo       logo"
+        "personajes personajes"
+        "footer     footer";
+}
+
+.personajes {
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        line-height: 30px;
+        letter-spacing: 5;
+        word-spacing: 7;
+        text-align: justify;
+        color: aliceblue;
+        text-transform: none;
+        background-color: black;
+    }
+
+    img {
+        margin: 2%;
+        max-width: 60%;
+    }
+
+    h2 {
+        color: aliceblue;
+        font-size: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+/* estilos mobile first 600-1024*/
+@media (min-width: 600px) {
+
+    .personajes-body {
+        h1 {
+            font-size: 40px;
+        }
+
+    }
+
+
+    .personajes {
+        p {
+            font-size: 18px;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+    }
+
+}
+
+/* estilos mobile first 1024*/
+@media (min-width: 1024px) {
+
+    .personajes-body {
+        h1 {
+            font-size: 50px;
+        }
+
+    }
+
+    .personajes {
+
+        p {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+    }
+
+
+    .nier {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .personajes img:hover {
+        transform: rotatey(360deg);
+        transition-duration: 2s;
+    }
+
+}

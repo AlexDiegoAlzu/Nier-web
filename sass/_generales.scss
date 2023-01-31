@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Roboto:ital@0;1&display=swap');
+
+/* reinicio padding y margin */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin marg ($left, $right) {
+
+    margin-left: $left;
+    margin-right: $right;
+}
