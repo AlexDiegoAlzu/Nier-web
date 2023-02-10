@@ -29,6 +29,14 @@ li a {
 }
 
 
+/*-------efecto nav---------*/
+
+@media (min-width: 992px) {
+
+    .nav-item a:hover {
+        transform: scale(1.5);
+    }
+}
 
 /*--------------------------diseño del footer--------------------------*/
 footer {
@@ -42,4 +50,13 @@ footer div ul {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+}
+
+/*-------efecto footer---------*/
+@media (min-width: 992px) {
+
+    footer img:hover {
+        transform: scale(1.5);
+        transition-duration: 2s;
+    }
 }

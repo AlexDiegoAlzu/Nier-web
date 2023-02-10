@@ -35,6 +35,12 @@ li a {
   padding-left: 3em;
 }
 
+/*-------efecto nav---------*/
+@media (min-width: 992px) {
+  .nav-item a:hover {
+    transform: scale(1.5);
+  }
+}
 /*--------------------------diseño del footer--------------------------*/
 footer {
   padding: 20px;
@@ -49,6 +55,12 @@ footer div ul {
   justify-content: space-evenly;
 }
 
+@media (min-width: 992px) {
+  footer img:hover {
+    transform: scale(1.5);
+    transition-duration: 2s;
+  }
+}
 /*--------------------------diseño index--------------------------*/
 .contenido-index div article h1 {
   font-family: "Roboto", sans-serif;
@@ -152,7 +164,7 @@ header {
 /* estilos mobile first 600-1024*/
 @media (min-width: 600px) {
   .ratio {
-    max-width: 1024px;
+    max-width: 991px;
   }
   .contenido-index div article h1 {
     font-size: 40px;
@@ -166,7 +178,7 @@ header {
   }
 }
 /* estilos mobile first 1024*/
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .ratio {
     max-width: 1080px;
   }
@@ -179,6 +191,11 @@ header {
   .trailer h2 {
     font-size: 50px;
     text-align: center;
+  }
+  .nier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .mainhistoria h1 {
@@ -313,7 +330,7 @@ header {
 }
 .personajes img {
   margin: 2%;
-  max-width: 60%;
+  max-width: 30%;
 }
 .personajes h2 {
   color: aliceblue;
@@ -353,6 +370,9 @@ header {
   .personajes img:hover {
     transform: rotatey(360deg);
     transition-duration: 2s;
+  }
+  .derecha img {
+    float: right;
   }
 }
 /*--------------------------musica--------------------------*/
@@ -469,7 +489,7 @@ header {
 .yoko img {
   float: left;
   margin: 2%;
-  max-width: 60%;
+  max-width: 40%;
 }
 
 .yoko p {
